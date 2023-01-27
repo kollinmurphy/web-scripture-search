@@ -1,0 +1,97 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Search the Scriptures" />
+
+  <title>Search the Scriptures</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+
+  <script type="text/javascript" src="js/scripture_texts/ot.js"></script>
+  <script type="text/javascript" src="js/scripture_texts/nt.js"></script>
+  <script type="text/javascript" src="js/scripture_texts/bom.js"></script>
+  <script type="text/javascript" src="js/scripture_texts/dc.js"></script>
+  <script type="text/javascript" src="js/scripture_texts/pearl.js"></script>
+  <script type="text/javascript" src="js/boldedword.js"></script>
+  <script type="text/javascript" src="js/engine.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+  <div id="mainContainer">
+    <div id="title">Search the Scriptures</div>
+
+    <div id="searchDetails" class="container">
+      <p>
+        Keywords: <input type="text" id="txtKeywords" /><br>
+      </p>
+      <p>
+        Use double quotes for exact matches. Separate multiple search terms by comma.<br>
+      </p>
+      
+
+      <div id="radioContainer">
+        <div>
+
+          <label for="ot">Old Testament
+            <input type="radio" id="ot" name="books" value="ot">
+            <span class="radioButton"></span>
+          </label>
+          <label for="nt">New Testament
+            <input type="radio" id="nt" name="books" value="nt">
+            <span class="radioButton"></span>
+          </label>
+          <label for="bom">Book of Mormon
+            <input type="radio" id="bom" name="books" value="bom">
+            <span class="radioButton"></span>
+          </label>
+        </div>
+        <div>
+
+          <label for="dc">Doctrine and Covenants
+            <input type="radio" id="dc" name="books" value="dc">
+            <span class="radioButton"></span>
+          </label>
+          <label for="pearl">Pearl of Great Price
+            <input type="radio" id="pearl" name="books" value="pearl">
+            <span class="radioButton"></span>
+          </label>
+          <label for="all">All Standard Works
+            <input type="radio" id="all" name="books" value="all" checked="checked">
+            <span class="radioButton"></span>
+          </label>
+        </div>
+      </div>
+      
+      <input type="submit" id="btnSearch" value="Search" disabled/>
+    </div>
+    <div id="searchResults" class="container">
+      Enter search query above.
+    </div>
+    <div id="attr" class="container">
+      <p>
+        This simple scriptural search engine is intended to be used as a study tool for those seeking to learn more
+        about our Savior Jesus Christ.
+      </p>
+      <p>
+        It includes what members of the Church of Jesus Christ of Latter-day Saints call the 'standard works', which is the
+        entire set of holy scriptures that God has revealed from ancient times all the way to our modern day.
+      </p>
+      <p>
+        To learn more please visit the Church's website <a href="https://www.comeuntochrist.org/">here</a>. This is not an official Church-sponsored web page.
+      </p>
+      <p>
+        Thanks to Ben Crowder for creating a <a href="https://github.com/bcbooks/scriptures-json">JSON version of the standard works</a>. Created by Kollin Murphy.
+      </p>
+    </div>
+
+  </div>
+</body>
+
+</html>

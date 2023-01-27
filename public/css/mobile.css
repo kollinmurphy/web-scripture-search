@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container {
+        background: none !important;
+        border: none !important;
+        margin: 10px !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 95% !important;
+    }
+
+    #radioContainer {
+        flex-direction: column;
+    }
+
+    #radioContainer > div {
+        width: 100%;
+    }
+  }
